@@ -1,0 +1,10 @@
+accessWidener v2 named
+accessible class net/minecraft/client/particle/BlockLeakParticle$Dripping
+accessible class net/minecraft/client/particle/BlockLeakParticle$ContinuousFalling
+accessible class net/minecraft/client/particle/BlockLeakParticle$Landing
+accessible method net/minecraft/client/particle/BlockLeakParticle$Dripping <init> (Lnet/minecraft/client/world/ClientWorld;DDDLnet/minecraft/fluid/Fluid;Lnet/minecraft/particle/ParticleEffect;)V
+accessible method net/minecraft/client/particle/BlockLeakParticle$ContinuousFalling <init> (Lnet/minecraft/client/world/ClientWorld;DDDLnet/minecraft/fluid/Fluid;Lnet/minecraft/particle/ParticleEffect;)V
+accessible method net/minecraft/client/particle/BlockLeakParticle$Landing <init> (Lnet/minecraft/client/world/ClientWorld;DDDLnet/minecraft/fluid/Fluid;)V
+accessible field net/minecraft/client/particle/BlockLeakParticle obsidianTear Z
+accessible field net/minecraft/client/particle/Particle gravityStrength F
+accessible field net/minecraft/client/particle/Particle maxAge I
