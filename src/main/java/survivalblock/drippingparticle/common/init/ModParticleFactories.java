@@ -14,32 +14,6 @@ import survivalblock.drippingparticle.mixin.LandingAccessor;
 
 
 public class ModParticleFactories {
-
-    public static BlockLeakParticle.Dripping createDrippingSoulTear(DefaultParticleType type, ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ) {
-        BlockLeakParticle.Dripping dripping = DrippingAccessor.newDripping(world, x, y, z, Fluids.EMPTY, ModParticleTypes.FALLING_SOUL_TEAR);
-        dripping.obsidianTear = true;
-        dripping.gravityStrength *= 0.01F;
-        dripping.maxAge = 100;
-        dripping.setColor(0.396078431f, 0.988235294f, 0.96078431372f);
-        return dripping;
-    }
-
-    public static BlockLeakParticle.ContinuousFalling createFallingSoulTear(DefaultParticleType type, ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ) {
-        BlockLeakParticle.ContinuousFalling falling = ContinuousFallingAccessor.newFalling(world, x, y, z, Fluids.EMPTY, ModParticleTypes.LANDING_SOUL_TEAR);
-        falling.obsidianTear = true;
-        falling.gravityStrength = 0.01F;
-        falling.setColor(0.396078431f, 0.988235294f, 0.96078431372f);
-        return falling;
-    }
-
-    public static BlockLeakParticle.Landing createLandingSoulTear(DefaultParticleType type, ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ) {
-        BlockLeakParticle.Landing landing = LandingAccessor.newLanding(world, x, y, z, Fluids.EMPTY);
-        landing.obsidianTear = true;
-        landing.maxAge = (int)(28.0 / (Math.random() * 0.8 + 0.2));
-        landing.setColor(0.396078431f, 0.988235294f, 0.96078431372f);
-        return landing;
-    }
-
     public static BlockLeakParticle.Dripping createDrippingSoulTear(@Nullable BlockLeakParticle.Dripping dripping, DefaultParticleType type, ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ) {
         if (dripping == null) dripping = DrippingAccessor.newDripping(world, x, y, z, Fluids.EMPTY, ModParticleTypes.FALLING_SOUL_TEAR);
         dripping.obsidianTear = true;
